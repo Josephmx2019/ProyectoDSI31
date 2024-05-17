@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menú de Administrador</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            /* Estilos para el formulario */
+            form {
+                max-width: 400px;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                background-color: #f9f9f9;
+            }
+            label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+
+            /* Estilos adicionales */
+            .menu {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+            .menu-item {
+                display: inline-block;
+                margin-right: 10px;
+            }
+            .submenu {
+                display: none;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 5px;
+            }
+            .menu-item:hover .submenu {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+
+    <div class="container mt-5">
+        <form>
+            <div class="form-group">
+                <label for="entity">Seleccione una entidad:</label>
+                <ul class="menu">
+                    <li class="menu-item">
+                        Centros de verificación
+                        <ul class="submenu">
+                            <li><a href="CCentrosverificacion.php">Consultar</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        Conductores
+                        <ul class="submenu">
+                            <li><a href="CCondcutores.php">Consultar</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        Direcciones
+                        <ul class="submenu">
+                            <li><a href="CDirecciones.php">Consultar</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        Licencias
+                        <ul class="submenu">
+                            <li><a href="CLicencias.php">Consultar</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        Multas
+                        <ul class="submenu">>
+                            <li><a href="CMultas.php">Consultar</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        Oficiales
+                        <ul class="submenu">
+                            <li><a href="COficiales.php">Consultar</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        Propietarios
+                        <ul class="submenu">
+                            <li><a href="#">Insertar</a></li>
+                            <li><a href="#">Actualizar</a></li>
+                            <li><a href="#">Eliminar</a></li>
+                            <li><a href="CPropietarios.php">Consultar</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        Tarjetas circulacion
+                        <ul class="submenu">
+                            <li><a href="CTarjetascirculacion.php">Consultar</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        Tenencias
+                        <ul class="submenu">
+                            <li><a href="CTenencias.php">Consultar</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        Vehiculos
+                        <ul class="submenu">
+                            <li><a href="CVehiculos.php">Consultar</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        Verificaciones
+                        <ul class="submenu">
+                            <li><a href="CVerificaciones.php">Consultar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </body>
+</html>

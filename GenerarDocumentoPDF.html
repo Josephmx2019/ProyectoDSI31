@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Generar Documento PDF</title>
+</head>
+<body>
+    <h2>Seleccione el tipo de documento:</h2>
+    <form action="procesar.php" method="post">
+        <label for="folio">Folio:</label>
+        <input type="text" id="folio" name="folio"><br><br>
+        
+        <input type="radio" id="licencia" name="tipo_documento" value="Licencia">
+        <label for="licencia">Licencia</label><br>
+        
+        <input type="radio" id="tarjeta_circulacion" name="tipo_documento" value="TarjetaCirculacion">
+        <label for="tarjeta_circulacion">Tarjeta de Circulación</label><br>
+        
+        <input type="radio" id="tarjeta_verificacion" name="tipo_documento" value="TarjetaVerificacion">
+        <label for="tarjeta_verificacion">Tarjeta de Verificación</label><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
