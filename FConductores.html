@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menú de Administrador</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            /* Estilos para el formulario */
+            form {
+                max-width: 400px;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                background-color: #f9f9f9;
+            }
+            label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+
+            /* Estilos adicionales */
+            .menu {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+            .menu-item {
+                display: inline-block;
+                margin-right: 10px;
+            }
+            .submenu {
+                display: none;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 5px;
+            }
+            .menu-item:hover .submenu {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="post" action="IConductores.php">
+            <label>ID Conductores </label>
+            <input type="text" id="ID" name="ID">
+            <br>
+            <label>Nombre </label>
+            <input type="text" id="Nombre" name="Nombre">
+            <br>
+            <label>Apellidos </label>
+            <input type="text" id="Apellidos" name="Apellidos">
+            <br>
+            <label>Fecha de Nacimiento </label>
+            <input type="date" id="FechaNacimiento" name="FechaNacimiento">
+            <br>
+            <label>Genero </label>
+            <select id="Genero" name="Genero">
+                <option value="a"> A </option>
+                <option value="b"> B </option>
+            </select>    
+            <br>
+            <label>Telefono </label>
+            <input type="number" id="Telefono" name="Telefono">
+            <br>
+            <label>Correo </label>
+            <input type="email" id="Correo" name="Correo">
+            <br>
+            <label>Direccion ID </label>
+            <input type="text" id="DireccionID" name="DireccionID">
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+<html>

@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menú de Administrador</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            /* Estilos para el formulario */
+            form {
+                max-width: 400px;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                background-color: #f9f9f9;
+            }
+            label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+
+            /* Estilos adicionales */
+            .menu {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+            .menu-item {
+                display: inline-block;
+                margin-right: 10px;
+            }
+            .submenu {
+                display: none;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 5px;
+            }
+            .menu-item:hover .submenu {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="get" action="IMultas.php">
+            <label>ID Multas </label>
+            <input type="text" id="ID" name="ID">
+            <br>
+            <label>Fecha </label>
+            <input type="date" id="Fecha" name="Fecha">
+            <br>
+            <label>Cantidad </label>
+            <input type="number" id="Cantidad" name="Cantidad">
+            <br>
+            <label>Descripcion </label>
+            <input type="text" id="Descripcion" name="Descripcion">
+            <br>
+            <label>Estado </label>
+            <select id="Estado" name="Estado">
+                <option value="no">Seleccione uno...</option>
+                <option value="Aguascalientes">Aguascalientes</option>
+                <option value="Baja California">Baja California</option>
+                <option value="Baja California Sur">Baja California Sur</option>
+                <option value="Campeche">Campeche</option>
+                <option value="Chiapas">Chiapas</option>
+                <option value="Chihuahua">Chihuahua</option>
+                <option value="CDMX">Ciudad de Mexico</option>
+                <option value="Coahuila">Coahuila</option>
+                <option value="Colima">Colima</option>
+                <option value="Durango">Durango</option>
+                <option value="Estado de Mexico">Estado de Mexico</option>
+                <option value="Guanajuato">Guanajuato</option>
+                <option value="Guerrero">Guerrero</option>
+                <option value="Hidalgo">Hidalgo</option>
+                <option value="Jalisco">Jalisco</option>
+                <option value="Michoacan">Michoacan</option>
+                <option value="Morelos">Morelos</option>
+                <option value="Nayarit">Nayarit</option>
+                <option value="Nuevo Leon">Nuevo Leon</option>
+                <option value="Oaxaca">Oaxaca</option>
+                <option value="Puebla">Puebla</option>
+                <option value="Queretaro">Queretaro</option>
+                <option value="Quintana Roo">Quintana Roo</option>
+                <option value="San Luis Potosi">San Luis Potosi</option>
+                <option value="Sinaloa">Sinaloa</option>
+                <option value="Sonora">Sonora</option>
+                <option value="Tabasco">Tabasco</option>
+                <option value="Tamaulipas">Tamaulipas</option>
+                <option value="Tlaxcala">Tlaxcala</option>
+                <option value="Veracruz">Veracruz</option>
+                <option value="Yucatan">Yucatan</option>
+                <option value="Zacatecas">Zacatecas</option>
+            </select>
+            <br>
+            <label>Infraccion </label>
+            <input type="text" id="Infraccion" name="Infraccion">
+            <br>
+            <label>ID Direccion </label>
+            <input type="text" id="ID_Direccion" name="ID_Direccion">
+            <br>
+            <label>ID Licencia </label>
+            <input type="text" id="ID_Licencia" name="ID_Licencia">
+            <br>
+            <label>ID Oficial </label>
+            <input type="text" id="ID_Oficial" name="ID_Oficial">
+            <br>
+            <label>ID Tarjeta </label>
+            <input type="text" id="ID_Tarjeta" name="ID_Tarjeta">
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+<html>
