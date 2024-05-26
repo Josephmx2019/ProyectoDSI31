@@ -18,12 +18,13 @@
                 print("Cuenta Activa");
                 if($Fila[4]==0){
                     print("Cuenta No Bloqueda");
-                    
                     print("Entrar");
                     if($Fila[2]=="U"){
-                        print("Entrar como usuario");
+                        header("Location: MenuUsuario.html");
+                        exit();
                     }else{
-                        print("Entrar como Administrador");
+                        header("Location: MenuAdmin.html");
+                        exit();
                     }
                 }else{
                     print("Cuenta Bloqueda");
